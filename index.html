@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Petit Outillage</title>
+    <style>
+        body {
+            font-family: dover contour, sans-serif;
+			<FONT CLASS="60"> </FONT>
+            margin: 0;
+            padding: 0;
+			background-color: #f4f4f4;
+			
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Location de Petit Outillage</h1>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#catalogue">Catalogue</a>
+    <a href="#reservation">Réservation</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>Nous proposons une large gamme de petit outillage à la location pour répondre à tous vos besoins de bricolage et de jardinage.</p>
+</section>
+
+<section id="catalogue">
+    <h2>Catalogue d'outillage</h2>
+    <ul>
+        <li>Perceuse électrique - Puissance : 500W</li>
+        <li>Ponceuse - Vitesse variable</li>
+        <li>Tondeuse à gazon - Largeur de coupe : 40cm</li>
+        <li>Scie circulaire - Diamètre de lame : 185mm</li>
+        <!-- Ajouter d'autres outils ici -->
+    </ul>
+</section>
+
+<section id="reservation">
+    <h2>Réservation</h2>
+    <form action="reservation.php" method="post">
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div class="form-group">
+            <label for="outil">Outil à réserver :</label>
+            <input type="text" id="outil" name="outil" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date de réservation :</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Réserver</button>
+        </div>
+    </form>
+</section>
+
+<section id="tarifs">
+    <h2>Tarifs et Conditions</h2>
+    <p>Voici nos tarifs pour la location de petit outillage :</p>
+    <ul>
+        <li>Perceuse électrique - 10€/jour</li>
+        <li>Ponceuse - 8€/jour</li>
+        <li>Tondeuse à gazon - 12€/jour</li>
+        <li>Scie circulaire - 15€/jour</li>
+        <!-- Ajouter d'autres tarifs ici -->
+    </ul>
+    <p>Conditions de location : dépôt de garantie, pièces d'identité, etc.</p>
+</section>
+
+<section id="temoignages">
+    <h2>Témoignages</h2>
+    <p>"Service rapide et efficace, outils en excellent état." - Jean Dupont</p>
+    <p>"Très satisfait de la tondeuse, je recommande !" - Marie Durand</p>
+    <!-- Ajouter d'autres témoignages ici -->
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form action="contact.php" method="post">
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Envoyer</button>
+        </div>
+    </form>
+    <p>Zone géographique desservie : Ville et alentours.</p>
+</section>
+
+</body>
+</html>
